@@ -10,27 +10,52 @@
 
     <form action="">
         <h1>Registration form</h1>
-
-        <label for="User ID">User ID:</label>
-
-        <div>Password:</div>
-
-        <div>Name:</div>
-
-        <div>Adres:</div>
-
-        <div>Country:</div>
-
-        <div>ZIP Code:</div>
-
-        <div>Email:</div>
-
-        <div>Sex:</div>
-
-        <div>Lauguage:</div>
-
-        <div>About:</div>
-
+        <br>
+        <label for="user ID">User ID:</label>
+        <input type="text" id="User ID" name="user_id" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="user_password" required>
+        <br>
+        <label for="name">name:</label>
+        <input type="text" id="name" name="user_name" required>
+        <br>
+        <label for="adress">Adress:</label>
+        <input type="text" id="adress" name="user_adres">
+        <br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="South-Africa">South-Africa</option>
+            <option value="America">America</option>
+            <option value="Netherland">Netherland</option>
+            <option value="Europe">Europe</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Japan">Japan</option>
+            <option value="Austrailia">Austrailia</option>
+        </select>
+        <br>
+        <label for="zipcode">ZIP Code:</label>
+        <input type="text" id="zipcode" name="user_zipcode" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" required>
+        <br>
+        <label for="sex">Sex:</label>
+        <input type="radio" name="sex" value="Male">
+        <label for="sex">Male</label>
+        <input type="radio" name="sex" value="Female">
+        <label for="sex">Female</label>
+        <br>
+        <label for="lauguage">Lauguage:</label>
+        <input type="checkbox" name="checkbox" value="English" unchecked>
+        <label for="checkbox">English</label>
+        <input type="checkbox" name="checkbox" value="Afrikaans" unchecked>
+        <label for="checkbox">Afrikaans</label>
+        <br>
+        <label for="about">About:</label>
+        <textarea name="user_message" id="about"></textarea>
+        <input type="submit" name="submit" value="submit">
+        <br>
     </form>
 
     <form action="https://submit.my.form" method="POST">
@@ -48,6 +73,36 @@
         <input type="submit">
     </form>
 
+    <h3>Choose your favorite color:</h3>
+    <form action="#" method="get">
+        <select name="favoriteColor">
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="purple">Purple</option>
+        </select>
+        <input type="submit" value="Confirm">
+    </form>
+
+    <h3>Customer Feedback Form</h3>
+    <form action="#" method="get">
+        <label for="customer">Please enter your name..</label>
+        <input type="text" name="customer">
+
+        <p>Please Rate our service</p>
+        <input type="radio" name="rating" value="Good">
+        <label for="rating">Good</label>
+        <input type="radio" name="rating" value="Okay">
+        <label for="rating">Okay</label>
+        <input type="radio" name="rating" value="Poor">
+        <label for="rating">Poor</label>
+
+        <label for="feedbackStatement">Provide feedback here please..</label>
+        <textarea name="feedbackStatement" cols="50" rows="7"></textarea>
+        <input type="submit" name="submit" value="Submit Feedback">
+    </form>
 </body>
 
 </html>
