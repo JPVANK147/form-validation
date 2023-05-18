@@ -15,16 +15,18 @@
         <h1>Registration form</h1>
         <br>
         <label for="user ID">User ID:</label>
-        <input type="text" id="User ID" name="user_id" required minlength="5" maxlength="12">
+        <input type="text" id="User ID" name="user_id" required minlength="5" maxlength="12"
+            placeholder="Required, lenght of 5 to 12 characters">
         <br>
         <label for="password">Password:</label>
-        <input type="text" id="password" name="user_password" required minlength="7" maxlength="12">
+        <input type="text" id="password" name="user_password" required minlength="7" maxlength="12"
+            placeholder="Required, lenght of 7 to 12 characters">
         <br>
         <label for="name">name:</label>
-        <input type="text" id="name" name="user_name" required>
+        <input type="text" id="name" name="user_name" required placeholder="Required, letters only">
         <br>
         <label for="adress">Adress:</label>
-        <input type="text" id="adress" name="user_adres" optional>
+        <input type="text" id="adress" name="user_adres" optional placeholder="Optional">
         <br>
         <label for="country">Country:</label>
         <select name="country" id="country">
@@ -36,24 +38,27 @@
             <option value="Japan">Japan</option>
             <option value="Austrailia">Austrailia</option>
         </select>
+        <label for="Required">Required</label>
         <br>
         <label for="zipcode">ZIP Code:</label>
-        <input type="text" id="zipcode" name="user_zipcode" required>
+        <input type="text" id="zipcode" name="user_zipcode" required placeholder="Required, numeric only">
         <br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="user_email" required>
+        <input type="email" id="email" name="user_email" required placeholder="Required, vailed email adress only">
         <br>
         <label for="sex">Sex:</label>
         <input type="radio" name="sex" value="Male">
         <label for="sex">Male</label>
         <input type="radio" name="sex" value="Female">
         <label for="sex">Female</label>
+        <label for="required">- Required</label>
         <br>
         <label for="lauguage">Lauguage:</label>
         <input type="checkbox" name="checkbox" value="English" unchecked>
         <label for="checkbox">English</label>
         <input type="checkbox" name="checkbox" value="Afrikaans" unchecked>
         <label for="checkbox">Afrikaans</label>
+        <label for="required">- Required</label>
         <br>
         <label for="about">About:</label>
         <br>
